@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "lastUsedProvider": "nvidia",
+  "modes": {},
+  "providers": {
+    "nvidia": {
+      "settings": {
+        "provider": "nvidia",
+        "apiKey": "<YOUR_NVIDIA_API_KEY>",
+        "model": "nvidia/nemotron-3-ultra-550b-a55b",
+        "baseUrl": "https://integrate.api.nvidia.com/v1",
+        "headers": {},
+        "reasoning": {
+          "enabled": true,
+          "effort": "low",
+          "budgetTokens": 400
+        }
+      }
+    }
+  }
+}

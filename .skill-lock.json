@@ -1,0 +1,15 @@
+{
+  "version": 3,
+  "skills": {
+    "agent-reach": {
+      "source": "Panniantong/Agent-Reach",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Panniantong/Agent-Reach.git",
+      "skillPath": "agent_reach/skill/SKILL.md",
+      "skillFolderHash": "3d21577f27a6407101d8e511b5507f915c75f715",
+      "installedAt": "2026-10-02T06:33:36.059Z",
+      "updatedAt": "2026-10-02T06:33:36.059Z"
+    }
+  },
+  "dismissed": {}
+}

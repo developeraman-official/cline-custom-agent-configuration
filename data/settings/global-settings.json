@@ -1,0 +1,7 @@
+{
+  "autoUpdateEnabled": false,
+  "telemetryOptOut": false,
+  "agent": "coderagent",
+  "autoInitializeAgents": true,
+  "persistenceDir": ".agent"
+}

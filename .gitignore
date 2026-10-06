@@ -1,0 +1,19 @@
+# Agent runtime state
+.agent/
+workspaces/
+db/
+sessions/
+checkpoint-scratch/
+
+# Secrets and machine-local Cline state: never commit these.
+# Copy the *.example.json templates and fill in your own values.
+data/secrets.json
+data/settings/providers.json
+data/globalState.json
+.env
+.env.*
+
+# Python / OS noise
+__pycache__/
+*.pyc
+.DS_Store

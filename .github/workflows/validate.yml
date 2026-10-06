@@ -1,0 +1,33 @@
+name: Validate configuration
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip pyyaml
+
+      - name: Validate agents, skills, JSON, links and secrets
+        run: python scripts/validate.py
+
+      - name: Smoke-test agent initialisation
+        run: python initialize_agents.py --workspace "$RUNNER_TEMP/workspace"
